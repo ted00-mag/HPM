@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "56374770807",
+    "firebase_url": "https://home-personal-monitoring.firebaseio.com",
+    "project_id": "home-personal-monitoring",
+    "storage_bucket": "home-personal-monitoring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56374770807:android:353e6b3e053989e3b2da72",
+        "android_client_info": {
+          "package_name": "si.uni_lj.fe.tnuv.hpm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56374770807-622lqi1hf9nk2j7qiua0m1e5bcm9qksn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq-Xl4KLoGdsBlacFnbxx63Vot4kmwRGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56374770807-622lqi1hf9nk2j7qiua0m1e5bcm9qksn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

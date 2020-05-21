@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_nastavitve"
+        android:title="@string/menu_nastavitve"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/menu_moj_racun"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/menu_moj_racun"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_splosno"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/menu_splosno"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_naprava"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/menu_naprava"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_pomoc"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/menu_pomoc"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_o_nas"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/menu_o_nas"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/menu_search"
+        app:showAsAction="ifRoom"
+        android:contentDescription="@string/isci_description"
+        />
+    <item
+        android:id="@+id/menu_odjava"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/menu_odjava"
+        app:showAsAction="never"
+        />
+
+</menu>

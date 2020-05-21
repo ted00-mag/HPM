@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_odstrani_aparat"
+        android:title="@string/menu_najboljPotratniAparati_odstrani_aparat"
+        />
+    <item
+        android:id="@+id/menu_dodaj_aparat"
+        android:title="@string/menu_najboljPotratniAparati_dodaj_aparat"
+        />
+</menu>

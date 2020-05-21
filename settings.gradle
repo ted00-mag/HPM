@@ -1,0 +1,2 @@
+rootProject.name='HPM'
+include ':app'

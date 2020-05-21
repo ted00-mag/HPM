@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout_row_racuni"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mesec_row_racuni"
+            android:textSize="35dp"
+            android:textColor="@color/crna"
+            android:paddingLeft="8dp"
+            android:textStyle="bold"
+            android:text="@string/mesec_row_racuni"
+            android:background="@color/seboljsvetlejsasiva"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cena_racuna"
+            android:textSize="30dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/seboljtemnejsasiva"
+            android:text="@string/cena_racuna_row_racuni"
+            android:background="@color/seboljsvetlejsasiva"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/seboljsvetlejsasiva"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:id="@+id/zapadlost"
+                android:textSize="15dp"
+                android:textColor="@color/vijola_rdece"
+                android:paddingLeft="8dp"
+                android:text="@string/datum_zapadlosti"
+                android:background="@color/seboljsvetlejsasiva"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:id="@+id/ze_placano"
+                android:textSize="15dp"
+                android:textColor="@color/vijola_rdece"
+                android:layout_toRightOf="@id/zapadlost"
+                android:text="@string/ze_placano"
+                android:layout_marginLeft="5dp"
+                android:background="@color/seboljsvetlejsasiva"
+                />
+
+            <TextView
+                android:id="@+id/Racuni_desno_puscica"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toRightOf="@id/zapadlost"
+                android:background="@color/seboljsvetlejsasiva"
+                android:text="@string/racuni_desno_puscica"
+                android:textColor="@color/seboljtemnejsasiva"
+                android:textAlignment="viewEnd"
+                android:textSize="15dp"
+                android:gravity="end"
+                android:layout_toStartOf="@id/expand_down"
+                android:layout_toLeftOf="@id/expand_down" />
+
+            <ImageView
+                android:id="@+id/expand_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand_more"
+                android:layout_alignParentRight="true"
+                android:background="@color/seboljsvetlejsasiva"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandable_layout_row_racuni"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/version"
+                android:text="@string/racun"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:textColor="@color/crna"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptio_row_racuni"
+                android:textSize="18dp"
+                android:layout_below="@id/version"
+                android:textColor="@color/crna"
+                android:padding="10dp"
+                android:textStyle="italic"
+                android:text="@string/razlenjen_racun"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

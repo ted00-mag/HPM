@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HOmeActivity"
+    android:background="@color/white">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+        <RelativeLayout
+            android:id="@+id/relativni_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lin_layout_tadej2"
+                android:padding="3dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/relativni_layout_tadej11"
+                    android:layout_weight="1"
+                    >
+                    // levi progress bar-----------------------------------------------------
+                    <TextView
+                        android:id="@+id/tvProgressBar_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/text_progress_bar_left"
+                        android:textColor="@color/sivi_napisi"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_toLeftOf="@id/circle_progress_bar_center"
+                        tools:ignore="NotSibling"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="100"
+                        android:progressDrawable="@drawable/circle_progress_background"
+                        android:layout_centerHorizontal="true"
+                        android:rotation="-90" />
+
+                    <ProgressBar
+                        android:id="@+id/circle_progress_bar_left"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:max="50"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circle_progress_foreground"
+                        android:rotation="-90" />
+
+                    <TextView
+                        android:id="@+id/tv_dnevna_poraba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="42dp"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/trenutna_poraba"
+                        android:textSize="18dp"
+                        android:textColor="@color/crna"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+                    // levi progress bar ------------------------------------------------------
+
+
+                </RelativeLayout>
+                // Srednji progress bar ----------------------------------------------------
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativni_layout_tadej3"
+                    android:layout_weight="0.72"
+                    >
+                    <TextView
+                        android:id="@+id/tvProgressBar_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/text_progress_bar_center"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/napis_progress_bar_center"
+                        android:textSize="30dp"
+                        />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:layout_gravity="center_horizontal"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="100"
+                        android:progressDrawable="@drawable/circle_progress_backgrond_center"
+                        android:rotation="-90"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/circle_progress_bar_center"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:layout_gravity="center_horizontal"
+                        android:indeterminate="false"
+                        android:max="1000"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circle_progress_foreground_center"
+                        android:rotation="-90" />
+
+                    <TextView
+                        android:id="@+id/tv_mesecna_poraba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trenutna_poraba"
+                        android:textSize="30dp"
+                        android:textColor="@color/crna"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+
+                        />
+                </RelativeLayout>
+
+
+
+                // Srednji progress bar ----------------------------------------------------
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/relativni_layout_tadej22"
+                    android:layout_weight="1"
+                    >
+
+                    // desni progress bar ----------------------------------------------------
+                    <TextView
+                        android:id="@+id/tvProgressBar_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_progress_bar_right"
+                        android:textStyle="bold"
+                        android:textColor="@color/sivi_napisi"
+                        android:textSize="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="100"
+                        android:progressDrawable="@drawable/circle_progress_background"
+                        android:layout_centerHorizontal="true"
+                        android:rotation="-90"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/circle_progress_bar_right"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:indeterminate="false"
+                        android:max="500"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circle_progress_foreground"
+                        android:rotation="-90" />
+
+                    <TextView
+                        android:id="@+id/tv_tedenska_poraba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trenutna_poraba"
+                        android:textColor="@color/crna"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                    // desni progress bar ----------------------------------------------------
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            //Konec linear layout - velja relative layout
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+                android:layout_below="@id/lin_layout_tadej2"
+                android:id="@+id/lin_layout_tadej1">
+                <TextView
+                    android:id="@+id/predvidenaMesecnaPorabav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/napoved"
+                    android:layout_below="@id/relativni_layout_tadej1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/temnejsa_siva"
+                    android:textSize="23dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/lin_layout_tadej1"
+                    android:id="@+id/relativni_layout_tadej1">
+
+                    <ImageView
+                        android:id="@+id/ivNapovedovanje_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_trending_flat"
+                        />
+                    <TextView
+                        android:id="@+id/tvNapovedovanje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivNapovedovanje_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/vrednostNapovedovanjaLevoOdikone"
+                        android:textSize="20dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/tvNapovedovanje"
+                        />
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="100"
+                        android:progressDrawable="@drawable/circle_progress_backgrond_center"
+                        android:rotation="-90"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/circle_progress_bar_predvidena_poraba"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:indeterminate="false"
+                        android:max="1000"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circle_progress_foreground_center"
+                        android:rotation="-90"
+                        />
+
+                    <TextView
+                                android:id="@+id/tv_Prikaz_predvidene_porabe_PB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:textStyle="italic"
+                                android:text="@string/vrednostNapovediNaSrediniProgressBara"
+                                android:textSize="30dp"/>
+                    />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/crtaPodPredvidenoPorabo"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/lin_layout_tadej1"
+                    android:background="@color/siva"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/najboljEnergijskoPotratniAparati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relativni_layout_tadej1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/najboljEnergijskoPotratniAparati"
+                    android:textColor="@color/temnejsa_siva"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/crtaPodNaslovomNajboljPotratniAparati"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/najboljEnergijskoPotratniAparati"
+                    android:background="@color/siva"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    // levi zgornji krog
+                    <TextView
+                        android:id="@+id/klimatskeNaprave"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/circle"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:text="@string/klimatskeNaprave"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/valueOfKlimatskaNaprava"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valueOfKlimatskaNaprava"
+                        android:layout_marginTop="90dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="58dp"
+                        android:textSize="25dp"
+                        android:textColor="@color/bela"
+                        />
+
+                    // levi spodnji krog
+
+                    <TextView
+                        android:id="@+id/pralni_stroj"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_below="@id/klimatskeNaprave"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/circle1"
+                        android:paddingLeft="13dp"
+                        android:paddingTop="20dp"
+                        android:text="@string/pralni_stroj"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/valueOfPralniStroj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valueOfPralniStroj"
+                        android:layout_below="@id/valueOfKlimatskaNaprava"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginLeft="73dp"
+                        android:textSize="25dp"
+                        android:textColor="@color/bela"
+                        />
+
+                    // srednji manjši krog
+                    <TextView
+                        android:id="@+id/hladilnik"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/circle3"
+                        android:layout_marginTop="80dp"
+                        android:layout_toRightOf="@id/klimatskeNaprave"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="12dp"
+                        android:textSize="15dp"
+                        android:text="@string/hladilnik"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        />
+                    <TextView
+                        android:id="@+id/valueOfHladilnik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valueOfHladilnik"
+                        android:layout_below="@id/osvetljava"
+                        android:layout_toRightOf="@id/klimatskeNaprave"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="26dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/bela"
+                        />
+
+                    // srednji malo večji krog
+                    <TextView
+                        android:id="@+id/pomivalni_stroj"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/circle"
+                        android:layout_below="@id/hladilnik"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/pralni_stroj"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="16dp"
+                        android:text="@string/pomivalni_stroj"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        />
+                    <TextView
+                        android:id="@+id/valueOfPomivalniStroj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valueOfPomivalniStroj"
+                        android:layout_below="@id/hladilnik"
+                        android:layout_toRightOf="@id/pralni_stroj"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginLeft="33dp"
+                        android:textSize="25dp"
+                        android:textColor="@color/bela"
+                        />
+
+                    // srednji desno zgoraj krog
+                    <TextView
+                        android:id="@+id/osvetljava"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/circle1"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/hladilnik"
+                        android:paddingTop="15dp"
+                        android:paddingLeft="6dp"
+                        android:textSize="13dp"
+                        android:text="@string/osvetljava"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        />
+                    <TextView
+                        android:id="@+id/valueOfOstvetljava"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valueOfOstvetljava"
+                        android:layout_toRightOf="@id/pomivalni_stroj"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginLeft="1dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/bela"
+                        />
+
+
+                    // srednji desno na sredini krog
+                    <TextView
+                        android:id="@+id/racunalnik"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle2"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@id/osvetljava"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/hladilnik"
+                        android:paddingTop="14dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="11dp"
+                        android:text="@string/racunalnik"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        />
+
+                    <TextView
+                        android:id="@+id/valueOfRacunalnika"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valueOfRacunalnika"
+                        android:layout_below="@id/osvetljava"
+                        android:layout_toRightOf="@id/hladilnik"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="27dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/bela"
+                        />
+
+                    // srednji desno spodnji krog
+                    <TextView
+                        android:id="@+id/likalnik"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/circle3"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/racunalnik"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/pomivalni_stroj"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="9dp"
+                        android:textSize="13dp"
+                        android:text="@string/likalnik"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        />
+                    <TextView
+                        android:id="@+id/valueOfLikalnik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valueOfLikalnik"
+                        android:layout_below="@id/racunalnik"
+                        android:layout_toRightOf="@id/pomivalni_stroj"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="22dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/bela"
+                        />
+
+                    // desno zgornji krog
+                    <TextView
+                        android:id="@+id/televizija"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/circle3"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/osvetljava"
+                        android:layout_marginLeft="1dp"
+                        android:layout_toRightOf="@id/likalnik"
+                        android:paddingTop="11dp"
+                        android:paddingLeft="12dp"
+                        android:textSize="13dp"
+                        android:text="@string/televizija"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        />
+
+                    // desno spodnji krog
+                    <TextView
+                        android:id="@+id/telefon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/circle3"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/televizija"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/likalnik"
+                        android:paddingTop="11dp"
+                        android:paddingLeft="2dp"
+                        android:textSize="10dp"
+                        android:text="@string/telefon"
+                        android:textColor="@color/barva_naslova_kartice_nasveti"
+                        />
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        <View
+            android:id="@+id/crtaPodNajboljEnergijsko_potratni_aparati"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/lin_layout_tadej1"
+            android:background="@color/siva"
+            android:layout_marginTop="5dp"
+            />
+
+            <TextView
+                android:id="@+id/tv_nasveti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/crtaPodNajboljEnergijsko_potratni_aparati"
+                android:layout_marginTop="10dp"
+                android:text="@string/naslov_tv_nasveti"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:textColor="@color/temnejsa_siva"
+                android:layout_marginLeft="10dp"
+                />
+
+        <View
+            android:id="@+id/crtaPodtvNasveti"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_nasveti"
+            android:background="@color/siva"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager_nasveti"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:overScrollMode="never"
+            android:layout_below="@id/crtaPodtvNasveti"
+            android:layout_marginTop="30dp"
+            android:clipToPadding="false"
+             >
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <View
+            android:id="@+id/crtaNadMiSmoTuZaVas"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/viewPager_nasveti"
+            android:background="@color/siva"
+            />
+
+        <TextView
+            android:id="@+id/mi_smo_tu_za_vas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crtaNadMiSmoTuZaVas"
+            android:layout_marginTop="10dp"
+            android:text="@string/miSmoTuZaVas"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:textColor="@color/temnejsa_siva"
+            android:layout_marginLeft="10dp"
+            />
+
+        <View
+            android:id="@+id/crtaPodMiSmoTuZaVas"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/mi_smo_tu_za_vas"
+            android:background="@color/siva"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/content_OF_mi_smo_tu_za_vas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crtaPodMiSmoTuZaVas"
+            android:layout_marginTop="8dp"
+            android:text="@string/content_oF_miSmoTuZaVas"
+            android:textSize="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/content_OF_mi_smo_tu_za_vas_spodnji_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_OF_mi_smo_tu_za_vas"
+            android:layout_marginTop="8dp"
+            android:text="@string/content_oF_miSmoTuZaVas_spodnji_del"
+            android:textSize="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/pogovor_z_nami"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_OF_mi_smo_tu_za_vas_spodnji_del"
+            android:layout_marginTop="10dp"
+            android:text="@string/pogovor_z_nami"
+            android:textSize="27dp"
+            android:textColor="@color/svetlejsa_siva"
+            android:layout_marginLeft="10dp"
+            />
+
+        <View
+            android:id="@+id/crtaPodPogovorZnami"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/pogovor_z_nami"
+            android:background="@color/siva"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_slika_telefona"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/crtaPodPogovorZnami"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_call"
+            android:background="?android:selectableItemBackground"
+            />
+
+        <TextView
+            android:id="@+id/tv_telefonska_stevilka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bt_slika_telefona"
+            android:layout_below="@id/crtaPodPogovorZnami"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:text="@string/telefonska_stevilka"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_napisi_sporocilo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_telefonska_stevilka"
+            android:layout_alignRight="@id/tv_telefonska_stevilka"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_napisi_sporocilo"
+            android:scaleType="fitCenter"
+            android:background="?android:selectableItemBackgroundBorderless"
+            tools:ignore="NewApi"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/tv_napisi_sporocilo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_telefonska_stevilka"
+            android:layout_toLeftOf="@id/bt_napisi_sporocilo"
+            android:text="@string/napisi_sporocilo"
+            android:layout_marginRight="5dp"
+            android:textSize="25dp"
+            android:paddingTop="20dp"
+            android:gravity="end"
+            android:layout_centerVertical="@id/bt_napisi_sporocilo"
+            />
+
+            <View
+                android:id="@+id/crtaNadRacuni"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/bt_napisi_sporocilo"
+                android:background="@color/siva"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tvRacuni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/crtaNadRacuni"
+                android:layout_marginTop="10dp"
+                android:text="@string/racuni"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:textColor="@color/temnejsa_siva"
+                android:layout_marginLeft="10dp"
+                />
+
+            <View
+                android:id="@+id/crtapodNaslovomRacuni"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvRacuni"
+                android:background="@color/siva"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:id="@+id/lin_layout_racuni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/crtapodNaslovomRacuni"
+                android:orientation="vertical"
+                android:padding="8dp"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    class="androidx.appcompat.app.AlertController$RecycleListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerViewRacuni"
+                    android:layout_marginTop="4dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/color_background_navigation_bar"
+        app:itemIconTint="@drawable/navigation_bar_selector"
+        app:itemTextColor="@drawable/navigation_bar_selector"
+        app:menu="@menu/menu_bottom_navigation_bar"
+        app:itemIconSize="@dimen/bottom_navigation_icon_size"
+        />
+
+</RelativeLayout>

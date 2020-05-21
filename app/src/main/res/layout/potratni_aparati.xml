@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView_potratni_aparati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        android:layout_margin="0dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            >
+
+            // levi zgornji krog
+            <TextView
+                android:id="@+id/klimatskeNaprave"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/circle"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="20dp"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:text="@string/klimatskeNaprave"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/valueOfKlimatskaNaprava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valueOfKlimatskaNaprava"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:layout_marginLeft="55dp"
+                android:textSize="25dp"
+                android:textColor="@color/bela"
+                />
+
+            // levi spodnji krog
+            <TextView
+                android:id="@+id/pralni_stroj"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/circle1"
+                android:layout_below="@id/klimatskeNaprave"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="40dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="13dp"
+                android:textSize="18dp"
+                android:text="@string/pralni_stroj"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                />
+
+            <TextView
+                android:id="@+id/valueOfPralniStroj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valueOfPralniStroj"
+                android:layout_below="@id/valueOfKlimatskaNaprava"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="70dp"
+                android:textSize="25dp"
+                android:textColor="@color/bela"
+                />
+
+            // srednji manjši krog
+            <TextView
+                android:id="@+id/hladilnik"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle3"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@id/klimatskeNaprave"
+                android:paddingTop="15dp"
+                android:paddingLeft="12dp"
+                android:textSize="15dp"
+                android:text="@string/hladilnik"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                />
+            <TextView
+                android:id="@+id/valueOfHladilnik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valueOfHladilnik"
+                android:layout_below="@id/osvetljava"
+                android:layout_toRightOf="@id/klimatskeNaprave"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="20dp"
+                android:textColor="@color/bela"
+                />
+
+            // srednji malo večji krog
+            <TextView
+                android:id="@+id/pomivalni_stroj"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle"
+                android:layout_below="@id/hladilnik"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/pralni_stroj"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="16dp"
+                android:text="@string/pomivalni_stroj"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                />
+            <TextView
+                android:id="@+id/valueOfPomivalniStroj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valueOfPomivalniStroj"
+                android:layout_below="@id/hladilnik"
+                android:layout_toRightOf="@id/pralni_stroj"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="25dp"
+                android:textColor="@color/bela"
+                />
+
+            // srednji desno zgoraj krog
+            <TextView
+                android:id="@+id/osvetljava"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/circle1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/hladilnik"
+                android:paddingTop="15dp"
+                android:paddingLeft="6dp"
+                android:textSize="13dp"
+                android:text="@string/osvetljava"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                />
+            <TextView
+                android:id="@+id/valueOfOstvetljava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valueOfOstvetljava"
+                android:layout_toRightOf="@id/pomivalni_stroj"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="1dp"
+                android:textSize="20dp"
+                android:textColor="@color/bela"
+                />
+
+            // srednji desno na sredini krog
+            <TextView
+                android:id="@+id/racunalnik"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle2"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/osvetljava"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/hladilnik"
+                android:paddingTop="18dp"
+                android:paddingLeft="5dp"
+                android:textSize="11dp"
+                android:text="@string/racunalnik"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                />
+
+            // srednji desno spodnji krog
+            <TextView
+                android:id="@+id/likalnik"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle3"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/racunalnik"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/pomivalni_stroj"
+                android:paddingTop="10dp"
+                android:paddingLeft="9dp"
+                android:textSize="13dp"
+                android:text="@string/likalnik"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                />
+            <TextView
+                android:id="@+id/valueOfLikalnik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valueOfLikalnik"
+                android:layout_below="@id/racunalnik"
+                android:layout_toRightOf="@id/pomivalni_stroj"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="22dp"
+                android:textSize="20dp"
+                android:textColor="@color/bela"
+                />
+
+            // desno zgornji krog
+            <TextView
+                android:id="@+id/televizija"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle3"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/osvetljava"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@id/likalnik"
+                android:paddingTop="11dp"
+                android:paddingLeft="12dp"
+                android:textSize="13dp"
+                android:text="@string/televizija"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                />
+
+            // desno spodnji krog
+            <TextView
+                android:id="@+id/telefon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle3"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/televizija"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/likalnik"
+                android:paddingTop="11dp"
+                android:paddingLeft="2dp"
+                android:textSize="10dp"
+                android:text="@string/telefon"
+                android:textColor="@color/barva_naslova_kartice_nasveti"
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

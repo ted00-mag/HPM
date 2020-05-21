@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="117dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal_background" />
+
+    <EditText
+        android:id="@+id/uporabniskoIme"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="Uporabniško ime"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/geslo"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Geslo"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/TextZaRegistracijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Že imate račun? Vpišite se tukaj!"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/prijava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_button_design"
+        android:text="Registracija"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInWithGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/scan_qr_button_design"
+        android:gravity="center"
+        android:text="@string/scan_qr"
+        android:textColor="@color/bela"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>
